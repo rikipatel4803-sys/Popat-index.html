@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sorry Popat 💚</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+body{
+  background: linear-gradient(135deg,#a8edea,#fed6e3);
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.container{
+  background:#fff;
+  width:90%;
+  max-width:400px;
+  border-radius:25px;
+  padding:25px;
+  text-align:center;
+  box-shadow:0 15px 30px rgba(0,0,0,0.2);
+  animation: pop 1s ease;
+}
+
+@keyframes pop{
+  0%{transform:scale(0.5);opacity:0;}
+  100%{transform:scale(1);opacity:1;}
+}
+
+h1{
+  color:#ff4081;
+  margin-bottom:10px;
+}
+
+.popat{
+  font-size:60px;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce{
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(-10px);}
+}
+
+p{
+  font-size:17px;
+  margin:12px 0;
+  color:#333;
+}
+
+button{
+  background:#ff4081;
+  color:white;
+  border:none;
+  padding:12px 25px;
+  border-radius:30px;
+  font-size:16px;
+  cursor:pointer;
+  margin-top:15px;
+}
+
+button:hover{
+  background:#e91e63;
+}
+
+.hidden{
+  display:none;
+}
+
+.footer{
+  margin-top:15px;
+  font-size:14px;
+  color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="popat">🐦</div>
+  <h1>Sorry Popat 💚</h1>
+
+  <p>
+    New Year wish karna bhool gayi 😭<br>
+    Ye meri sabse badi bhool thi…
+  </p>
+
+  <button onclick="showMsg()">Click karo Popat 😄</button>
+
+  <p id="msg" class="hidden">
+    Tu sirf friend nahi,<br>
+    **BEST FRIEND** hai ❤️<br><br>
+    Late ho gayi, par dil bilkul on-time 😌<br>
+    Sorry Popatiiii 🙏<br><br>
+    ✨ Happy New Year ✨<br>
+    Hamesha mera favourite Popat rahega 😂💚
+  </p>
+
+  <div class="footer">
+    Made with 💚 by your Bestie
+  </div>
+</div>
+
+<script>
+function showMsg(){
+  document.getElementById("msg").classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>
